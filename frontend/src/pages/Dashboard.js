@@ -6,11 +6,11 @@ function Dashboard() {
   const [rewards, setRewards] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/user-data")
+    fetch("https://simpleinterndashboard.onrender.com/user-data")
       .then(res => res.json())
       .then(data => setUserData(data));
 
-    fetch("http://localhost:5000/rewards")
+    fetch("https://simpleinterndashboard.onrender.com/rewards")
       .then(res => res.json())
       .then(data => setRewards(data));
   }, []);
