@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #f5f5f5;
+}
+
+.dashboard {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+  background: rgba(20, 20, 40, 0.9);
+  border-radius: 25px;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+}
+
+.dashboard h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #00f2fe;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 260px;
+  padding: 25px;
+  background: linear-gradient(to right, #fc466b, #3f5efb);
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card.alt {
+  background: linear-gradient(to right, #00f2fe, #4facfe);
+}
